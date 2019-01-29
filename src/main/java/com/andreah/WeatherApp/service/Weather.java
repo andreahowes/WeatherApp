@@ -1,4 +1,4 @@
-package com.andreah.oauth2tutorial20190109.service;
+package com.andreah.WeatherApp.service;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.EqualsAndHashCode;

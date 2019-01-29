@@ -1,4 +1,4 @@
-package com.andreah.oauth2tutorial20190109.configuration;
+package com.andreah.WeatherApp.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

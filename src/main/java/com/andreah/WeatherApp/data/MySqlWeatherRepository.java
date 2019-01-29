@@ -1,6 +1,6 @@
-package com.andreah.oauth2tutorial20190109.data;
+package com.andreah.WeatherApp.data;
 
-import com.andreah.oauth2tutorial20190109.service.Weather;
+import com.andreah.WeatherApp.service.Weather;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

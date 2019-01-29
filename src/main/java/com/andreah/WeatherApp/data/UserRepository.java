@@ -1,6 +1,6 @@
-package com.andreah.oauth2tutorial20190109.data;
+package com.andreah.WeatherApp.data;
 
-import com.andreah.oauth2tutorial20190109.service.security.User;
+import com.andreah.WeatherApp.service.security.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

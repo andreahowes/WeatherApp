@@ -1,4 +1,4 @@
-package com.andreah.oauth2tutorial20190109.service.security;
+package com.andreah.WeatherApp.service.security;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

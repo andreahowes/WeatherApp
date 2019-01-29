@@ -1,7 +1,7 @@
-package com.andreah.oauth2tutorial20190109.presentation;
+package com.andreah.WeatherApp.presentation;
 
-import com.andreah.oauth2tutorial20190109.service.Weather;
-import com.andreah.oauth2tutorial20190109.service.WeatherService;
+import com.andreah.WeatherApp.service.Weather;
+import com.andreah.WeatherApp.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -1,8 +1,8 @@
-package com.andreah.oauth2tutorial20190109.service;
+package com.andreah.WeatherApp.service;
 
-import com.andreah.oauth2tutorial20190109.data.UserRepository;
+import com.andreah.WeatherApp.data.UserRepository;
 
-import com.andreah.oauth2tutorial20190109.service.security.User;
+import com.andreah.WeatherApp.service.security.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

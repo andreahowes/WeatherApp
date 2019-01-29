@@ -1,6 +1,6 @@
-package com.andreah.oauth2tutorial20190109.service;
+package com.andreah.WeatherApp.service;
 
-import com.andreah.oauth2tutorial20190109.data.MySqlWeatherRepository;
+import com.andreah.WeatherApp.data.MySqlWeatherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;

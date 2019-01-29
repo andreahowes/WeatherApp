@@ -1,15 +1,10 @@
-package com.andreah.oauth2tutorial20190109.data;
+package com.andreah.WeatherApp.data;
 
 
-import com.andreah.oauth2tutorial20190109.service.Weather;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.DefaultUriBuilderFactory;
-
-import java.net.URI;
 
 @Repository
 @PropertySource("classpath:weatherAPIapplication.properties")

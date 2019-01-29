@@ -1,4 +1,4 @@
-package com.andreah.oauth2tutorial20190109;
+package com.andreah.WeatherApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
