@@ -1,13 +1,15 @@
-# OAuth2
+# WeatherApp
 
-This is a working implementation of spring boot security oauth2. This differs from the first implementation of oAuth2 in that this implementation uses a mySQL database instead of an in memory database. 
+An (in-progress) Java application that notifies the user every morning at a certain time if they will need an umbrella that day. 
+The user can enter their location and the time they want the reminder each morning. The API endpoints are secured with 
+oAuth2. The user enters their clientId and password in exchange for a token that allows access to the resource server. 
 
 
 ## Getting Started
 
 You can get started utilizing this example by cloning the project to your local machine:
 ```
-$ git clone https://github.com/ashcreek/Oauth2Security.git
+$ git clone https://github.com/ashcreek/WeatherApp.git
 ```
 Then use the .sql files in the database package to create the database.
 
@@ -44,8 +46,4 @@ Token: [insert token]
 ## Author
 * **Andrea Howes** - *Initial work* - [GitHub](https://github.com/ashcreek)
 
-## Acknowledgments
-
-Created using the tutorial: [Secure Spring REST With Spring Security and OAuth2](https://dzone.com/articles/secure-spring-rest-with-spring-security-and-oauth2
-)
 
