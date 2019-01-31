@@ -11,22 +11,22 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-@Repository
-public class MySqlWeatherRepository implements WeatherRepository{
-
-    @PersistenceContext
-    private EntityManager entityManager;
-
-    public List<Weather> findAll() {
-        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Weather> query = builder.createQuery(Weather.class);
-        Root<Weather> root = query.from(Weather.class);
-        query.select(root).distinct(true);
-        TypedQuery<Weather> allQuery = entityManager.createQuery(query);
-
-        return allQuery.getResultList();
-    }
-}
+//@Repository
+//public class MySqlWeatherRepository implements WeatherRepository{
+//
+//    @PersistenceContext
+//    private EntityManager entityManager;
+//
+//    public List<Weather> findAll() {
+//        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
+//        CriteriaQuery<Weather> query = builder.createQuery(Weather.class);
+//        Root<Weather> root = query.from(Weather.class);
+//        query.select(root).distinct(true);
+//        TypedQuery<Weather> allQuery = entityManager.createQuery(query);
+//
+//        return allQuery.getResultList();
+//    }
+//}
 
 
 

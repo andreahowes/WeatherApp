@@ -10,41 +10,28 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Table(name = "WEATHER", uniqueConstraints = {@UniqueConstraint(columnNames = {"CITY"})})
-@Getter
-@Setter
-@EqualsAndHashCode(of = "id")
-public class Weather implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID", updatable = false, nullable = false)
-    private Long id = null;
+//@Entity
+//@Table(name = "WEATHER", uniqueConstraints = {@UniqueConstraint(columnNames = {"CITY"})})
+//@Getter
+//@Setter
+//@EqualsAndHashCode(of = "id")
+public class Weather {//implements Serializable {
+    private boolean raining;
 
-    @Column(name = "CITY", nullable = false)
-    private String city;
-
-    public Long getId() {
-        return id;
+    public boolean isRaining() {
+        return raining;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setRaining(boolean raining) {
+        this.raining = raining;
     }
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+    //@Column(name = "ID", updatable = false, nullable = false)
+    //private Long id = null;
+//
+    //@Column(name = "CITY", nullable = false)
+    //private String city;
 
-    public String getCity() {
-        return city;
-    }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    @Override
-    public String toString() {
-        return "Weather{" +
-                "id=" + id +
-                ", city='" + city + '\'' +
-                '}';
-    }
 }
