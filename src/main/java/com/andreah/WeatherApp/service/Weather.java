@@ -17,6 +17,7 @@ import java.util.Set;
 //@EqualsAndHashCode(of = "id")
 public class Weather {//implements Serializable {
     private boolean raining;
+    private double temp;
 
     public boolean isRaining() {
         return raining;
@@ -25,6 +26,15 @@ public class Weather {//implements Serializable {
     public void setRaining(boolean raining) {
         this.raining = raining;
     }
+
+    public double getTemp() {
+        return temp;
+    }
+
+    public void setTemp(double temp) {
+        this.temp = temp;
+    }
+
     //@Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
     //@Column(name = "ID", updatable = false, nullable = false)

@@ -1,5 +1,6 @@
 package com.andreah.WeatherApp.service;
 
+import com.andreah.WeatherApp.data.ApiWeatherRepository;
 import com.andreah.WeatherApp.data.WeatherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -11,7 +12,7 @@ public class WeatherService {
     //maybe put the weatherRepository in the constructor?
 
     @Autowired
-    private WeatherRepository weatherRepository;
+    private ApiWeatherRepository weatherRepository;
 
     @Transactional(readOnly = true)
 

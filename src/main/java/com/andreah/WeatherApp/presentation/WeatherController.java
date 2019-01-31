@@ -20,7 +20,7 @@ public class WeatherController {
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(value = HttpStatus.OK)
     public @ResponseBody
-    List<Weather> getAll() {
-        return weatherService.getAll();
+    Weather getAll() {
+        return weatherService.getWeatherFromLocation("Louisville");
     }
 }
