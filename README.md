@@ -1,7 +1,6 @@
 # WeatherApp
 
-An (in-progress) Java application that notifies the user every morning at a certain time if they will need an umbrella that day. 
-The user can enter their location and the time they want the reminder each morning. The API endpoints are secured with 
+A Java application that tells the user the current temperature in Louisville. The API endpoints are secured with 
 oAuth2. The user enters their clientId and password in exchange for a token that allows access to the resource server. 
 
 
