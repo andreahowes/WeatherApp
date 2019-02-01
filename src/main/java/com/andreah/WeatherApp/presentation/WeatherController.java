@@ -17,10 +17,17 @@ public class WeatherController {
     @Autowired
     private WeatherService weatherService;
 
-    @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseStatus(value = HttpStatus.OK)
-    public @ResponseBody
-    Weather getAll() {
-        return weatherService.getWeatherFromLocation("Louisville");
+  // @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+  // @ResponseStatus(value = HttpStatus.OK)
+  // public @ResponseBody
+  // Weather getAll() {
+  //     return weatherService.getWeatherFromLocation("Louisville");
+  // }
+
+    @GetMapping
+    public String getAll(){
+        Weather weather = weatherService.getWeatherFromLocation("Louisville");
+        double temp = weather.getTemp();
+        return "The temperature in Louisville is: " + temp + " F";
     }
 }
