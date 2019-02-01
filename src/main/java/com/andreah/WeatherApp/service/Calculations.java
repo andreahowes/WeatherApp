@@ -1,4 +1,4 @@
-package com.andreah.WeatherApp.data;
+package com.andreah.WeatherApp.service;
 
 public class Calculations {
     public static double getTheTempInF(Double temp) {

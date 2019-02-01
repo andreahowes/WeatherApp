@@ -16,16 +16,8 @@ import java.util.Set;
 //@Setter
 //@EqualsAndHashCode(of = "id")
 public class Weather {//implements Serializable {
-    private boolean raining;
+    //private boolean raining;
     private double temp;
-
-    public boolean isRaining() {
-        return raining;
-    }
-
-    public void setRaining(boolean raining) {
-        this.raining = raining;
-    }
 
     public double getTemp() {
         return temp;

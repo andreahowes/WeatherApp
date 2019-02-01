@@ -1,5 +1,6 @@
 package com.andreah.WeatherApp.data;
 
+import com.andreah.WeatherApp.service.Calculations;
 import com.andreah.WeatherApp.service.Weather;
 import org.springframework.stereotype.Service;
 
