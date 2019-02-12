@@ -1,4 +1,4 @@
-package com.andreah.WeatherApp.data;
+package com.andreah.WeatherApp.data.pojos;
 
 public class ApiInfoMain {
     private Double temp;

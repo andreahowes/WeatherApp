@@ -1,4 +1,4 @@
-package com.andreah.WeatherApp.service;
+package com.andreah.WeatherApp.data.pojos;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.EqualsAndHashCode;
