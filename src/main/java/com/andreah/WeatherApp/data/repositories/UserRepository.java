@@ -1,6 +1,6 @@
-package com.andreah.WeatherApp.data;
+package com.andreah.WeatherApp.data.repositories;
 
-import com.andreah.WeatherApp.service.security.User;
+import com.andreah.WeatherApp.security.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
