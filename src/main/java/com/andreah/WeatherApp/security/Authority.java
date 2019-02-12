@@ -1,4 +1,4 @@
-package com.andreah.WeatherApp.service.security;
+package com.andreah.WeatherApp.security;
 
 
 import lombok.EqualsAndHashCode;

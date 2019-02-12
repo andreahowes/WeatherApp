@@ -1,8 +1,7 @@
-package com.andreah.WeatherApp.service;
+package com.andreah.WeatherApp.security;
 
-import com.andreah.WeatherApp.data.UserRepository;
+import com.andreah.WeatherApp.data.repositories.UserRepository;
 
-import com.andreah.WeatherApp.service.security.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
