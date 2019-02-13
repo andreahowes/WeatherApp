@@ -14,14 +14,10 @@ public class WeatherController {
     private WeatherService weatherService;
 
     /**
-     *
-     * @return
+     * @return The String value of the temperature in Fahrenheit at the current time and location.
      */
     @GetMapping
-    public String getAll(){
-        String str = "andrea";
-        char c = str.charAt(2);
-
+    public String getTemp(){
         Weather weather = weatherService.getWeatherFromLocation("Louisville");
         double temp = weather.getTemp();
         return "The temperature in Louisville is: " + temp + " F";

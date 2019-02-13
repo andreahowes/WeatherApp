@@ -33,10 +33,6 @@ public class WeatherService implements WeatherRepository {
     @Autowired
     private WeatherRepository weatherRepository;
 
-    /*
-
-
-     */
     public static Weather mapWeather(ApiWeather apiWeather) {
         Weather weather = new Weather();
         Double temp = apiWeather.getMain().getTemp();
