@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/secured/weather")
-public class WeatherController {
+public class WeatherApiController {
 
     @Autowired
     private WeatherService weatherService;
@@ -16,10 +16,10 @@ public class WeatherController {
     /**
      * @return The String value of the temperature in Fahrenheit at the current time and location.
      */
-    @GetMapping
-    public String getTemp(){
-        Weather weather = weatherService.getWeatherFromLocation("Louisville");
+    @GetMapping("/{city}")
+    public String getTemp(@PathVariable String city){
+        Weather weather = weatherService.getWeatherFromLocation(city);
         double temp = weather.getTemp();
-        return "The temperature in Louisville is: " + temp + " F";
+        return "The temperature in " + city + " is: " + temp + " F";
     }
 }
