@@ -1,6 +1,6 @@
 # WeatherApp
 
-A Java application that tells the user the current temperature in Louisville. The API endpoints are secured with 
+A Java application that tells the user the current temperature in any city. The API endpoints are secured with 
 oAuth2. The user enters their clientId and password in exchange for a token that allows access to the resource server. 
 
 
@@ -33,7 +33,7 @@ password admin1234
 client_id spring-security-oauth2-read-write-client
 
 * Using Authentication Token for request to Resource Server:
-http://localhost:8080/secured/weather
+http://localhost:8080/secured/weather/louisville
 Authentication- Bearer Token
 Token: [insert token]
 
